@@ -441,7 +441,7 @@ h3{
     gap: 5px;
     color: var(--color-white);
     margin-block: 1px;
-    font-size: 12px
+    font-size: 18px
 }
 .contact-info p>i{
     font-size: 15px;
@@ -648,4 +648,18 @@ footer{
         width: 100%;
     }
 }
+
+/* Estilos predeterminados */
+.contact-info p {
+    font-size: 18px; /* Tamaño de letra predeterminado */
+}
+
+/* Media Query para dispositivos con un ancho máximo de 600px (por ejemplo, dispositivos móviles) */
+@media only screen and (max-width: 600px) {
+    .contact-info p {
+        font-size: 12px; /* Tamaño de letra para dispositivos móviles */
+    }
+}
+
+
 
