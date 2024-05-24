@@ -202,6 +202,7 @@ nav{
 .featured-text-btn>.blue-btn{
     background: var(--first-color);
     color: var(--color-white);
+    text-decoration: none;
 }
 .featured-text-btn>.blue-btn:hover{
     background: var(--first-color-hover);
@@ -209,6 +210,7 @@ nav{
 .social_icons{
     display: flex;
     margin-top: 5em;
+    gap: 30px;
 }
 .icon{
     display: flex;
@@ -327,8 +329,8 @@ h3{
 }
 .about-btn button{
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 25px;
+    bottom: 15px;
     background: var(--first-color);
     color: var(--color-white);
     border-radius: 30px;
@@ -347,8 +349,7 @@ h3{
 .skills-list{
     display: flex;
     flex-wrap: wrap;
-    gap: 3px;
-	width: 200px;
+    gap: 5px;
 }
 .skills-list span{
     font-size: 14px;
@@ -387,6 +388,12 @@ h3{
 .project-box label{
     font-size: 15px;
     color: #777;
+    text-align: center; /* Centra horizontalmente */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    
+    
 }
 .project-box::after, .contact-info::after{
     content: "";
@@ -485,7 +492,6 @@ textarea{
     justify-content: center;
     background: var(--second-color);
     color: var(--color-white);
-    
 }
 .form-button>.btn:hover{
     background: #00B5E7;
@@ -530,14 +536,15 @@ footer{
     margin-top: 10px;
 }
 
+
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
     .featured-text{
         padding: 0;
     }
     .image, .image img{
-        width: 1000px;
-        height: 1000px;
+        width: 320px;
+        height: 320px;
     }
 }
 
@@ -591,10 +598,10 @@ footer{
         justify-content: center;
         min-height: 150px;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 65px;
     }
     .image, .image img{
-        width: 300px;
+        width: 150px;
         height: 150px;
     }
     .row{
@@ -635,9 +642,4 @@ footer{
     .input-field{
         width: 100%;
     }
-}
-
-/* ------ REMOVE UNDERLINE FROM LINK ------ */
-.blue-btn {
-    text-decoration: none;
 }
